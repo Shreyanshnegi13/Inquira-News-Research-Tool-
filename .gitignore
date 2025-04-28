@@ -8,16 +8,11 @@ rockybot-env/
 vector_index/
 faiss_store_gemini/
 
-# Ignore notebooks (optional: if you don't want to upload notebooks and sample data)
-notebooks/*.ipynb
-notebooks/*.txt
-notebooks/*.csv
-
 # Ignore Python bytecode files
 *.pyc
 *.pyo
 __pycache__/
 
-# Ignore any log files or temporary files
+# Ignore log files and temp files
 *.log
 *.tmp
