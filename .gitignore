@@ -1,0 +1,23 @@
+# Ignore Python environment
+rockybot-env/
+
+# Ignore .env file (contains sensitive API keys, passwords, etc.)
+.env
+
+# Ignore saved vector indexes
+vector_index/
+faiss_store_gemini/
+
+# Ignore notebooks (optional: if you don't want to upload notebooks and sample data)
+notebooks/*.ipynb
+notebooks/*.txt
+notebooks/*.csv
+
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore any log files or temporary files
+*.log
+*.tmp
