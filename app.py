@@ -2,13 +2,17 @@ import os
 import streamlit as st
 import pickle
 import time
+import nltk
 from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 from langchain.chains import RetrievalQAWithSourcesChain
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.document_loaders import UnstructuredURLLoader
 from langchain.vectorstores import FAISS
-
 from dotenv import load_dotenv
+
+nltk.download("punkt")
+nltk.download("punkt_tab")
+
 load_dotenv()
 
 st.title("Inquira: News Research Tool 📈")
